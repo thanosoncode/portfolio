@@ -8,9 +8,9 @@ const Navbar = () => {
     >
       <div>thanosweb.dev</div>
       <div className="flex gap-8">
-        <div>experience</div>
-        <div>projects</div>
-        <div>contact</div>
+        <a href="#experience">experience</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
       </div>
     </Box>
   );

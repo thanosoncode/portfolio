@@ -12,11 +12,16 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
-      <ProjectsHeader title="Work experience" subtitle="my work experience" />
+      <ProjectsHeader
+        title="Work experience"
+        subtitle="my work experience"
+        id="experience"
+      />
       <Experience />
       <ProjectsHeader
         title="Freelance projects"
         subtitle="Checkout my cool projects"
+        id="projects"
       />
       <ProjectsContainer left={nimaAnima} right={atlasChania} />
       <ProjectsHeader

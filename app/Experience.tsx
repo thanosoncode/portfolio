@@ -6,22 +6,22 @@ const Experience = () => {
   return (
     <>
       <Box outerClasses="border-b border-neutral-600">
-        <div className="flex items-start">
-          <div className="h-full w-2/5 px-[3vw]">
-            <div className="py-12">
-              <h3 className="text-4xl">
+        <div className="flex flex-col items-start sm:flex-row">
+          <div className="h-full w-full px-[3vw] sm:w-2/5">
+            <div className="py-10">
+              <h3 className="text-xl">
                 <div>
                   Front-end Engineer{" "}
                   <span className="mb-2 text-appGreen-400">GWI</span>
                 </div>
-                <div className="text-2xl text-neutral-300">
+                <div className="text-base text-neutral-400">
                   Mar 2022 &ndash; Present
                 </div>
               </h3>
             </div>
           </div>
-          <div className="w-3/5 border-l border-neutral-600 px-[3vw] ">
-            <div className="flex flex-col gap-6 py-12">
+          <div className="w-full border-l border-neutral-600 px-[3vw] sm:w-3/5 ">
+            <div className="flex flex-col gap-6 py-10">
               <div className="flex items-start gap-2">
                 {/* <Image
                 src={bullet}
@@ -106,24 +106,24 @@ const Experience = () => {
         </div>
       </Box>
       <Box
-        innerClasses="flex items-start"
+        innerClasses="flex items-start sm:flex-row flex-col"
         outerClasses="border-b border-neutral-600"
       >
-        <div className="h-full w-2/5 border-r border-neutral-600 px-[3vw]">
-          <div className="py-12">
-            <h3 className="text-4xl">
+        <div className="h-full w-full border-r border-neutral-600 px-[3vw] sm:w-2/5">
+          <div className="py-10">
+            <h3 className="text-xl">
               <div>
                 Software Engineer{" "}
                 <span className="text-appGreen-400">NimaAnima</span>
               </div>
-              <div className="text-2xl text-neutral-300">
+              <div className="text-base text-neutral-400">
                 Sep 2023 &ndash; Present
               </div>
             </h3>
           </div>
         </div>
-        <div className="w-3/5 px-[3vw]">
-          <p className="py-12">
+        <div className="w-full px-[3vw] sm:w-3/5">
+          <p className="py-10">
             Developing an full stack e-commerce with{" "}
             <span className="text-appGreen-400">
               custom CMS and payment integration
@@ -134,24 +134,24 @@ const Experience = () => {
         </div>
       </Box>
       <Box
-        innerClasses="flex items-start"
+        innerClasses="flex items-start flex-col sm:flex-row"
         outerClasses="border-b border-neutral-600"
       >
-        <div className="h-full w-2/5 border-r border-neutral-600 px-[3vw]">
-          <div className="py-12">
-            <h3 className="text-4xl">
+        <div className="h-full w-full border-r border-neutral-600 px-[3vw] sm:w-2/5">
+          <div className="py-10">
+            <h3 className="text-xl">
               <div>
                 Software Engineer{" "}
                 <span className="text-appGreen-400">Atlas Chania</span>
               </div>
-              <div className="text-2xl text-neutral-300">
+              <div className="text-base text-neutral-400">
                 Jun 2023 &ndash; Aug 2023
               </div>
             </h3>
           </div>
         </div>
-        <div className="w-3/5 px-[3vw]">
-          <p className="py-12">
+        <div className="w-full px-[3vw] sm:w-3/5">
+          <p className="py-10">
             Developed full stack website including{" "}
             <span className="text-appGreen-400">
               blog and newsletter management

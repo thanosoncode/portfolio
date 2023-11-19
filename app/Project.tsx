@@ -10,12 +10,12 @@ const Project = ({
   project: { name, description, demoUrl, codeUrl, image, icons },
 }: ProjectProps) => {
   return (
-    <div className="p-12">
+    <div className="p-[3vw]">
       <div>
         <Image src={image} alt={name} />
       </div>
       <div className="flex flex-col gap-8 pt-4">
-        <div className="text-4xl">{name}</div>
+        <div className="text-3xl">{name}</div>
         <div className="flex flex-wrap gap-4">
           {icons.map((icon, index) => (
             <Image

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Project } from "./utils/types";
+import { Project } from "../utils/types";
 import Link from "next/link";
 
 interface ProjectProps {
@@ -24,7 +24,7 @@ const Project = ({
               alt={icon.name}
               width={50}
               height={50}
-              className="h-10 w-10"
+              className="h-8 w-8 sm:h-9 sm:w-9 lg:h-10 lg:w-10"
             />
           ))}
         </div>
@@ -34,7 +34,7 @@ const Project = ({
             href={demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center rounded-md border border-appGreen-400 px-4 py-1 text-appGreen-400"
+            className="hover: flex items-center whitespace-nowrap rounded-md border border-appGreen-400 px-4 py-1 text-appGreen-400 hover:bg-appGreen-400 hover:text-black"
           >
             View Demo
           </Link>
@@ -42,7 +42,7 @@ const Project = ({
             target="_blank"
             rel="noopener noreferrer"
             href={codeUrl}
-            className="flex items-center rounded-md border border-white px-4 py-1 "
+            className="flex items-center whitespace-nowrap rounded-md border border-white px-4 py-1 duration-200 hover:border-black hover:bg-white hover:text-black"
           >
             View Code
           </Link>

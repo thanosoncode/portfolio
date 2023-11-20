@@ -1,13 +1,11 @@
-import Image from "next/image";
-import Box from "./box";
-import bullet from "../public/icons/bulletstar.png";
+import Box from "../components/box";
 
 const Experience = () => {
   return (
     <>
       <Box outerClasses="border-b border-neutral-600">
-        <div className="flex flex-col items-start sm:flex-row">
-          <div className="h-full w-full px-[3vw] sm:w-2/5">
+        <div className="grid grid-cols-1 sm:grid-cols-[40%_60%]">
+          <div className="h-full px-[3vw]">
             <div className="py-10">
               <h3 className="text-xl">
                 <div>
@@ -20,16 +18,9 @@ const Experience = () => {
               </h3>
             </div>
           </div>
-          <div className="w-full border-l border-neutral-600 px-[3vw] sm:w-3/5 ">
+          <div className="border-t border-neutral-600 px-[3vw] sm:border-l">
             <div className="flex flex-col gap-6 py-10">
               <div className="flex items-start gap-2">
-                {/* <Image
-                src={bullet}
-                alt="bullet"
-                width={12}
-                height={12}
-                className="h-6 w-6"
-              /> */}
                 <p className="">
                   Building{" "}
                   <span className="text-appGreen-400">
@@ -39,13 +30,6 @@ const Experience = () => {
                 </p>
               </div>
               <div className="flex items-start gap-2">
-                {/* <Image
-                src={bullet}
-                alt="bullet"
-                width={12}
-                height={12}
-                className="h-6 w-6"
-              /> */}
                 <p className="">
                   Revamping and expanding the platform&apos;s{" "}
                   <span className="text-appGreen-400">
@@ -56,13 +40,6 @@ const Experience = () => {
                 </p>
               </div>
               <div className="flex items-start gap-2">
-                {/* <Image
-                src={bullet}
-                alt="bullet"
-                width={12}
-                height={12}
-                className="h-6 w-6"
-              /> */}
                 <p className="">
                   Achieving an{" "}
                   <span className="text-appGreen-400">
@@ -73,13 +50,6 @@ const Experience = () => {
                 </p>
               </div>
               <div className="flex items-start gap-2">
-                {/* <Image
-                src={bullet}
-                alt="bullet"
-                width={12}
-                height={12}
-                className="h-6 w-6"
-              /> */}
                 <p className="">
                   Optimizing and extending existing code improving{" "}
                   <span className="text-appGreen-400">
@@ -88,13 +58,6 @@ const Experience = () => {
                 </p>
               </div>
               <div className="flex items-start gap-2">
-                {/* <Image
-                src={bullet}
-                alt="bullet"
-                width={12}
-                height={12}
-                className="h-6 w-6"
-              /> */}
                 <p className="">
                   Effectively collaborating in{" "}
                   <span className="text-appGreen-400">agile methodologies</span>{" "}
@@ -106,14 +69,14 @@ const Experience = () => {
         </div>
       </Box>
       <Box
-        innerClasses="flex items-start sm:flex-row flex-col"
+        innerClasses="grid grid-cols-1 sm:grid-cols-[40%_60%]"
         outerClasses="border-b border-neutral-600"
       >
-        <div className="h-full w-full border-r border-neutral-600 px-[3vw] sm:w-2/5">
+        <div className="h-full px-[3vw]">
           <div className="py-10">
             <h3 className="text-xl">
               <div>
-                Software Engineer{" "}
+                Software engineer{" "}
                 <span className="text-appGreen-400">NimaAnima</span>
               </div>
               <div className="text-base text-neutral-400">
@@ -122,7 +85,7 @@ const Experience = () => {
             </h3>
           </div>
         </div>
-        <div className="w-full px-[3vw] sm:w-3/5">
+        <div className="border-t border-neutral-600 px-[3vw] sm:border-l">
           <p className="py-10">
             Developing an full stack e-commerce with{" "}
             <span className="text-appGreen-400">
@@ -134,14 +97,14 @@ const Experience = () => {
         </div>
       </Box>
       <Box
-        innerClasses="flex items-start flex-col sm:flex-row"
+        innerClasses="grid grid-cols-1 sm:grid-cols-[40%_60%]"
         outerClasses="border-b border-neutral-600"
       >
-        <div className="h-full w-full border-r border-neutral-600 px-[3vw] sm:w-2/5">
+        <div className="h-full px-[3vw]">
           <div className="py-10">
             <h3 className="text-xl">
               <div>
-                Software Engineer{" "}
+                Software engineer{" "}
                 <span className="text-appGreen-400">Atlas Chania</span>
               </div>
               <div className="text-base text-neutral-400">
@@ -150,7 +113,7 @@ const Experience = () => {
             </h3>
           </div>
         </div>
-        <div className="w-full px-[3vw] sm:w-3/5">
+        <div className="border-t border-neutral-600 px-[3vw] sm:border-l">
           <p className="py-10">
             Developed full stack website including{" "}
             <span className="text-appGreen-400">

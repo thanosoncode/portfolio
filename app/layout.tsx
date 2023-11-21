@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./footer/Footer";
 import ToastProvider from "./components/toast/ToastProvider";
+import { FOOTER_HEIGHT, NAVBAR_HEIGHT } from "./utils/constants";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ToastProvider />
+
         <Navbar />
-        {children}
+        <div className={`min-h-[calc(100vh-184px)]`}>{children}</div>
         <Footer />
       </body>
     </html>

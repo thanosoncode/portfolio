@@ -12,9 +12,9 @@ const Navbar = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   const links = [
-    { name: "experience", href: "#experience" },
-    { name: "projects", href: "#projects" },
-    { name: "contact", href: "#contact" },
+    { name: "experience", href: "/experience" },
+    { name: "projects", href: "/projects" },
+    { name: "contact", href: "/contact" },
   ];
 
   const handleOutsideClick = (event: MouseEvent) => {
@@ -44,19 +44,16 @@ const Navbar = () => {
   }, []);
 
   return (
-    <Box
-      outerClasses="border-b border-neutral-700 relative"
-      innerClasses="flex items-center justify-between py-8 px-[3vw]"
-    >
-      <Link className="" href="/">
-        thanosweb.dev
+    <Box classes="flex justify-between py-8">
+      <Link className="text-primary-color text-lg font-medium" href="/">
+        thanosjs
       </Link>
       <div className="hidden gap-8 sm:flex">
         {links.map((link) => (
           <Link
             key={link.name}
             href={link.href}
-            className="duration-200 hover:text-appGreen-400"
+            className="hover:text-primary-color duration-200"
           >
             {link.name}
           </Link>

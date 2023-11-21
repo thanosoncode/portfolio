@@ -9,7 +9,7 @@ const LinkOutlined = ({ href, text }: LinkOutlinedProps) => {
   return (
     <Link
       href={href}
-      className="block w-44 whitespace-nowrap rounded-md border border-white py-1.5 text-center text-white duration-200 hover:border-appGreen-400 hover:text-appGreen-400 sm:py-2 sm:text-lg"
+      className="text-primary-color hover:border-secondary-color hover:text-secondary-color block w-44 whitespace-nowrap rounded-md border border-white py-1.5 text-center duration-200 sm:py-2"
     >
       {text}
     </Link>

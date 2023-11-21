@@ -21,7 +21,7 @@ const MobileMenu = ({ onClose, links, isMenuOpen }: MobileMenuProps) => {
         isMenuOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
-      <button onClick={onClose} className="mb-8 mr-[6vw] mt-[3vw] self-end">
+      <button onClick={onClose} className="mb-8 mr-16 mt-8 self-end">
         <div className="cursor-pointer [&>svg]:h-6 [&>svg]:w-6 [&>svg]:duration-200 hover:[&>svg]:opacity-80">
           <IoClose />
         </div>

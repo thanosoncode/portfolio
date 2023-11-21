@@ -10,39 +10,40 @@ const Project = ({
   project: { name, description, demoUrl, codeUrl, image, icons },
 }: ProjectProps) => {
   return (
-    <div className="p-[3vw]">
+    <div className="">
       <div>
         <Image src={image} alt={name} />
       </div>
-      <div className="flex flex-col gap-8 pt-4">
-        <div className="text-3xl">{name}</div>
-        <div className="flex flex-wrap gap-4">
+      <div className="flex flex-col gap-2 pt-4">
+        <div className="text-primary-color text-2xl">{name}</div>
+        <div className="text-primary-color">{description}</div>
+        <div className="flex flex-wrap gap-4 py-5">
           {icons.map((icon, index) => (
-            <Image
-              key={index}
-              src={icon.image}
-              alt={icon.name}
-              width={50}
-              height={50}
-              className="h-8 w-8 sm:h-9 sm:w-9 lg:h-10 lg:w-10"
-            />
+            <div key={index}>{icon.name}</div>
+            // <Image
+            //   key={index}
+            //   src={icon.image}
+            //   alt={icon.name}
+            //   width={50}
+            //   height={50}
+            //   className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7"
+            // />
           ))}
         </div>
-        <div>{description}</div>
         <div className="flex gap-8">
           <Link
             href={demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover: flex items-center whitespace-nowrap rounded-md border border-appGreen-400 px-4 py-1 text-appGreen-400 hover:bg-appGreen-400 hover:text-black"
+            className="hover: border-primary-color text-primary-color hover:bg-primary-color flex items-center whitespace-nowrap rounded-md border px-4 py-1 hover:text-black"
           >
             View Demo
           </Link>
           <Link
+            href={codeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            href={codeUrl}
-            className="flex items-center whitespace-nowrap rounded-md border border-white px-4 py-1 duration-200 hover:border-black hover:bg-white hover:text-black"
+            className="hover: border-primary-color text-primary-color hover:bg-primary-color flex items-center whitespace-nowrap rounded-md border px-4 py-1 hover:text-black"
           >
             View Code
           </Link>

@@ -22,8 +22,7 @@ import { Project } from "./types";
 export const nimaAnima: Project = {
   name: "NimaAnima",
   image: nima,
-  description:
-    "Developing an e-commerce with custom CMS and payment integration using Next.js, Typescript, Stripe, Redux-toolkit, React-query,Prisma, TailwindCSS",
+  description: "E-commerce with custom CMS and payment integration",
   icons: [
     { name: "Typescript", image: typescript },
     { name: "Next.js", image: next },
@@ -42,8 +41,7 @@ export const nimaAnima: Project = {
 export const atlasChania: Project = {
   name: "Atlas Chania",
   image: atlas,
-  description:
-    "Developed a website for my local gym using Next.js, Typescript, Tailwind CSS, Prisma, Next-auth, React-quill, and Resend including blog and newsletter management for admins",
+  description: "Gym website with blog and newsletter management",
   icons: [
     { name: "Typescript", image: typescript },
     { name: "Next.js", image: next },
@@ -62,7 +60,7 @@ export const trainingLog: Project = {
   name: "Training log",
   image: training,
   description:
-    "Created a MERN app for tracking workouts including user auth flows with Node, Express, React, Typescript, Prisma, Material-UI and Recharts for data visualization.",
+    "MERN app with user flows and data visualization to track workouts",
   icons: [
     { name: "Typescript", image: typescript },
     { name: "React.js", image: react },
@@ -81,8 +79,7 @@ export const trainingLog: Project = {
 export const workWizards: Project = {
   name: "Work wizards",
   image: wizards,
-  description:
-    "Creating an online marketplace for professionals in hospitality using Next.js, Typescript, Redux-toolkit, Prisma, React-hook-form, TailwindCSS",
+  description: "Online marketplace for professionals in hospitality",
   icons: [
     { name: "Typescript", image: typescript },
     { name: "Next.js", image: next },

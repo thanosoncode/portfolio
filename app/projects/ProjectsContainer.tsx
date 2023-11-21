@@ -9,10 +9,9 @@ interface ProjectsContainerProps {
 
 const ProjectsContainer = ({ left, right }: ProjectsContainerProps) => {
   return (
-    <Box outerClasses="border-b border-neutral-600">
-      <div className="flex flex-col sm:flex-row">
+    <Box classes="mb-24">
+      <div className="grid grid-cols-1 gap-12 sm:grid-cols-2">
         <Project project={left} />
-        <div className="h-[1px] w-full bg-neutral-600 sm:h-auto sm:w-[1px]"></div>
         <Project project={right} />
       </div>
     </Box>

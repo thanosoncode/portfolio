@@ -9,7 +9,7 @@ const LinkContained = ({ href, text }: LinkContainedProps) => {
   return (
     <Link
       href={href}
-      className="block w-44  whitespace-nowrap rounded-md bg-white py-1.5 text-center text-black duration-200 hover:bg-appGreen-400 sm:py-2  sm:text-lg"
+      className="hover:bg-background-color bg-primary-color hover:text-primary-color hover:border-primary-color  text-background-color block w-44 whitespace-nowrap rounded-md border py-1.5 text-center duration-200 sm:py-2"
     >
       {text}
     </Link>

@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import Box from "../components/box";
+import Box from "../components/Box";
 import emailjs from "@emailjs/browser";
 import z from "zod";
 import { useForm } from "react-hook-form";

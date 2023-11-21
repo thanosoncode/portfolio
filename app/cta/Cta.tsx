@@ -1,5 +1,5 @@
 import LinkContained from "../components/LinkContained";
-import Box from "../components/box";
+import Box from "../components/Box";
 
 const Cta = () => {
   return (

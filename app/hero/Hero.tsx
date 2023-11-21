@@ -1,4 +1,4 @@
-import Box from "../components/box";
+import Box from "../components/Box";
 import github from "../../public/icons/github.png";
 import linkedIn from "../../public/icons/linkedin.png";
 import LinkIcon from "../components/LinkIcon";

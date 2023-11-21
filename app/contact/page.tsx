@@ -5,6 +5,10 @@ import emailjs from "@emailjs/browser";
 import z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "react-hot-toast";
+import { FaCheck } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+import ToastMessage from "../components/toast/ToastMessage";
 
 const FormData = z.object({
   email: z.string().min(1, { message: "Please add an email." }).email({
@@ -30,6 +34,7 @@ const Contact = () => {
     if (!data) {
       return;
     }
+
     setIsLoading(true);
     try {
       const response = await emailjs.sendForm(
@@ -41,15 +46,34 @@ const Contact = () => {
       if (response.text !== "OK") {
         setIsLoading(false);
         formRef.current && formRef.current.reset();
-        throw new Error(response.text);
+        toast.custom(
+          <ToastMessage
+            icon={<AiOutlineClose />}
+            status="Something went wrong :/"
+            text="Please try again later"
+          />,
+        );
       }
       setIsLoading(false);
+      toast.custom(
+        <ToastMessage
+          icon={<FaCheck />}
+          status="Email sent :D"
+          text="Thanks for taking the time to write it"
+        />,
+      );
       formRef.current && formRef.current.reset();
       return;
     } catch (error) {
       setIsLoading(false);
       formRef.current && formRef.current.reset();
-      throw new Error("Something went wrong.");
+      toast.custom(
+        <ToastMessage
+          icon={<AiOutlineClose />}
+          status="Something went wrong :/"
+          text="Please try again later"
+        />,
+      );
     }
   };
 

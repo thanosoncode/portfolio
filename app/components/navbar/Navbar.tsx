@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Box from "../box";
+import Box from "../Box";
 import { useEffect, useRef, useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import MobileMenu from "./mobileMenu/MobileMenu";

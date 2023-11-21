@@ -4,18 +4,13 @@ import { useEffect, useRef, useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import MobileMenu from "./mobileMenu/MobileMenu";
 import Container from "../Container";
+import { LINKS } from "@/app/utils/constants";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
   const openMenu = () => setIsMenuOpen(true);
   const closeMenu = () => setIsMenuOpen(false);
-
-  const links = [
-    { name: "experience", href: "/experience" },
-    { name: "projects", href: "/projects" },
-    { name: "contact", href: "/contact" },
-  ];
 
   const handleOutsideClick = (event: MouseEvent) => {
     if (menuRef.current) {
@@ -49,7 +44,7 @@ const Navbar = () => {
         thanosjs
       </Link>
       <div className="hidden gap-8 md:flex">
-        {links.map((link) => (
+        {LINKS.map((link) => (
           <Link
             key={link.name}
             href={link.href}
@@ -64,7 +59,7 @@ const Navbar = () => {
           <HiOutlineMenu />
         </div>
       </button>
-      <MobileMenu links={links} isMenuOpen={isMenuOpen} onClose={closeMenu} />
+      <MobileMenu isMenuOpen={isMenuOpen} onClose={closeMenu} />
     </Container>
   );
 };

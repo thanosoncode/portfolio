@@ -1,4 +1,5 @@
 "use client";
+import { LINKS } from "@/app/utils/constants";
 import { LinkItem } from "@/app/utils/types";
 import Link from "next/link";
 import React, { useRef } from "react";
@@ -6,11 +7,10 @@ import { IoClose } from "react-icons/io5";
 
 interface MobileMenuProps {
   isMenuOpen: boolean;
-  links: LinkItem[];
   onClose: () => void;
 }
 
-const MobileMenu = ({ onClose, links, isMenuOpen }: MobileMenuProps) => {
+const MobileMenu = ({ onClose, isMenuOpen }: MobileMenuProps) => {
   const menuRef = useRef<HTMLDivElement | null>(null);
   return (
     <div
@@ -25,7 +25,7 @@ const MobileMenu = ({ onClose, links, isMenuOpen }: MobileMenuProps) => {
         </div>
       </button>
       <div className="flex flex-col gap-4">
-        {links.map((link) => (
+        {LINKS.map((link) => (
           <Link
             onClick={onClose}
             key={link.name}

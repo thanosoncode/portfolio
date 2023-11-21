@@ -1,30 +1,38 @@
 import Container from "@/app/components/Container";
+import { NAVBAR_PLUS_FOOTER_HEIGHT } from "@/app/utils/constants";
 import Link from "next/link";
 
 const Hero = () => {
   return (
-    <Container classes="flex items-center justify-center md:justify-start h-[calc(100vh-184px)]">
-      <div className="py-16 sm:py-24">
-        <h1 className="mb-2 text-4xl font-semibold text-primary-color">
-          Chrysanthopoulos Thanos
-        </h1>
-        <div className="mb-4 text-2xl text-primary-color">
-          Software engineer
+    <Container
+      classes={`flex items-center justify-center md:justify-start h-[calc(100vh-${NAVBAR_PLUS_FOOTER_HEIGHT}px)]`}
+    >
+      <div className="flex flex-col gap-7">
+        <div>
+          <h1 className="mb-2 text-4xl font-semibold text-primary-color">
+            Chrysanthopoulos Thanos
+          </h1>
+          <h2 className="text-xl text-primary-color">Software engineer</h2>
         </div>
-        <div className="my-4 flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
           <div>Currently building with React, Typescript, Next.js and Node</div>
           <div> Always curious to learn new stuff</div>
         </div>
-        <div className="mb-4 flex gap-4">
+        <div className="flex gap-4">
           <Link
             href="/contact"
             className="border-b border-transparent px-1 text-primary-color duration-200 hover:border-primary-color"
           >
             Contact
           </Link>
-          <div className="border-b border-transparent px-1 text-primary-color duration-200 hover:border-primary-color">
+          <Link
+            href="resume/resume.pdf"
+            target="a_black"
+            rel="noopener noreferrer"
+            className="border-b border-transparent px-1 text-primary-color duration-200 hover:border-primary-color"
+          >
             Resume
-          </div>
+          </Link>
         </div>
       </div>
     </Container>

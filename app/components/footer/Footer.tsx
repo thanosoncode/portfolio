@@ -3,20 +3,21 @@ import linkedIn from "../../../public/icons/linkedin.png";
 import Link from "next/link";
 import LinkIcon from "../LinkIcon";
 import Container from "../Container";
+import { LINKS } from "@/app/utils/constants";
 
 const Footer = () => {
   return (
     <Container classes="flex items-center justify-between py-8">
       <div className="flex gap-8">
-        <Link href="#projects" className="hover:text-appGreen-400 duration-200">
-          experience
-        </Link>
-        <Link href="#projects" className="hover:text-appGreen-400 duration-200">
-          projects
-        </Link>
-        <Link href="#projects" className="hover:text-appGreen-400 duration-200">
-          contact
-        </Link>
+        {LINKS.map((link) => (
+          <Link
+            key={link.name}
+            href={link.href}
+            className="duration-200 hover:text-primary-color"
+          >
+            {link.name}
+          </Link>
+        ))}
       </div>
       <div className="flex gap-6">
         <LinkIcon

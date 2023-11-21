@@ -12,7 +12,13 @@ const Project = ({
   return (
     <div className="">
       <div>
-        <Image src={image} alt={name} />
+        <Image
+          src={image}
+          alt={name}
+          placeholder="blur"
+          sizes="(min-width: 1000px) 430px, (min-width: 780px) calc(40vw + 38px), calc(100vw - 32px)"
+          priority
+        />
       </div>
       <div className="flex flex-col gap-2 pt-4">
         <div className="text-2xl text-primary-color">{name}</div>

@@ -8,8 +8,8 @@ import ToastProvider from "./components/toast/ToastProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "thanosweb.dev",
-  description: "thanosweb.dev",
+  title: "Thanosjs | Software engineer",
+  description: "Building with React, Typescript, Next.js and Node.js",
 };
 
 export default function RootLayout({

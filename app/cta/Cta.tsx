@@ -11,7 +11,7 @@ const Cta = () => {
         <h1 className="text-center text-4xl sm:text-6xl">
           You made it this far
         </h1>
-        <LinkContained href="/contact" text="Say hi" />
+        <LinkContained href="/contact" text="Send an email" />
       </div>
     </Box>
   );

@@ -17,11 +17,11 @@ const Hero = () => {
           Software engineer
         </div>
         <div className="my-8 leading-relaxed">
-          Currently building with React, Typescript, Next.js and Node
-          <br />
           Always curious to learn new stuff
+          <br />
+          Currently building with React, Typescript, Next.js and Node
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex gap-4">
           <LinkIcon
             href="https://www.linkedin.com/in/thanos-chrysanthopoulos/"
             image={linkedIn}
@@ -33,8 +33,8 @@ const Hero = () => {
             alt="github"
           />
         </div>
-        <div className="mt-8 flex gap-4">
-          <LinkContained text="Say hi" href="/contact" />
+        <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <LinkContained text="Send an email" href="/contact" />
           <LinkOutlined text="Download resume" href="" />
         </div>
       </div>

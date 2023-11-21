@@ -1,5 +1,3 @@
-import Box from "./Box";
-
 interface HeaderProps {
   title: string;
   subtitle?: string;

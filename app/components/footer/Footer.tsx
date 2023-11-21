@@ -1,20 +1,20 @@
-import Box from "../Box";
 import github from "../../../public/icons/github.png";
 import linkedIn from "../../../public/icons/linkedin.png";
 import Link from "next/link";
 import LinkIcon from "../LinkIcon";
+import Container from "../Container";
 
 const Footer = () => {
   return (
-    <Box classes="flex items-center justify-between py-8">
+    <Container classes="flex items-center justify-between py-8">
       <div className="flex gap-8">
-        <Link href="#projects" className="duration-200 hover:text-appGreen-400">
+        <Link href="#projects" className="hover:text-appGreen-400 duration-200">
           experience
         </Link>
-        <Link href="#projects" className="duration-200 hover:text-appGreen-400">
+        <Link href="#projects" className="hover:text-appGreen-400 duration-200">
           projects
         </Link>
-        <Link href="#projects" className="duration-200 hover:text-appGreen-400">
+        <Link href="#projects" className="hover:text-appGreen-400 duration-200">
           contact
         </Link>
       </div>
@@ -30,7 +30,7 @@ const Footer = () => {
           alt="github"
         />
       </div>
-    </Box>
+    </Container>
   );
 };
 

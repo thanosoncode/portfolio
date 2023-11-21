@@ -21,7 +21,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ToastProvider />
-
         <Navbar />
         <div className={`min-h-[calc(100vh-184px)]`}>{children}</div>
         <Footer />

@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
-import Box from "../Box";
 import { useEffect, useRef, useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import MobileMenu from "./mobileMenu/MobileMenu";
+import Container from "../Container";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +44,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <Box classes="flex justify-between py-8">
+    <Container classes="flex justify-between py-8">
       <Link className="text-lg font-medium text-primary-color" href="/">
         thanosjs
       </Link>
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
       </button>
       <MobileMenu links={links} isMenuOpen={isMenuOpen} onClose={closeMenu} />
-    </Box>
+    </Container>
   );
 };
 

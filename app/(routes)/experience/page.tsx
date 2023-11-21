@@ -1,4 +1,4 @@
-import Box from "../../components/Box";
+import Container from "@/app/components/Container";
 import Header from "../../components/Header";
 import { MotionPageWrapper } from "../../components/MotionPageWrapper";
 
@@ -61,7 +61,7 @@ const experiences = [
 const Experience = () => {
   return (
     <MotionPageWrapper>
-      <Box classes="pb-20">
+      <Container classes="pb-20">
         <Header title="Work experience" />
         <div className="flex flex-col gap-16">
           {experiences.map((exp, index) => (
@@ -87,7 +87,7 @@ const Experience = () => {
             </div>
           ))}
         </div>
-      </Box>
+      </Container>
     </MotionPageWrapper>
   );
 };

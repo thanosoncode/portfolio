@@ -1,6 +1,5 @@
 "use client";
 import { useRef, useState } from "react";
-import Box from "../../components/Box";
 import emailjs from "@emailjs/browser";
 import z from "zod";
 import { useForm } from "react-hook-form";
@@ -11,6 +10,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import ToastMessage from "../../components/toast/ToastMessage";
 import { MotionPageWrapper } from "../../components/MotionPageWrapper";
 import Header from "../../components/Header";
+import Container from "@/app/components/Container";
 
 const FormData = z.object({
   email: z.string().min(1, { message: "Please add an email." }).email({
@@ -81,7 +81,7 @@ const Contact = () => {
 
   return (
     <MotionPageWrapper>
-      <Box>
+      <Container>
         <Header
           title="Contact me asap"
           subtitle="I would love to hear from you"
@@ -137,7 +137,7 @@ const Contact = () => {
             {isLoading ? "Sending..." : "Send email"}
           </button>
         </form>
-      </Box>
+      </Container>
     </MotionPageWrapper>
   );
 };

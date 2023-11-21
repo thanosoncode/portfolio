@@ -1,4 +1,4 @@
-import Box from "../../components/Box";
+import Container from "@/app/components/Container";
 import Header from "../../components/Header";
 import { MotionPageWrapper } from "../../components/MotionPageWrapper";
 import {
@@ -12,7 +12,7 @@ import ProjectsContainer from "./ProjectWrapper";
 const ProjectsPage = () => {
   return (
     <MotionPageWrapper>
-      <Box>
+      <Container>
         <Header
           title="Freelance projects"
           subtitle="Checkout my cool projects"
@@ -23,7 +23,7 @@ const ProjectsPage = () => {
           subtitle="personal stuff I do to learn"
         />
         <ProjectsContainer left={workWizards} right={trainingLog} />
-      </Box>
+      </Container>
     </MotionPageWrapper>
   );
 };

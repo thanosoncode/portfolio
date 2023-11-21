@@ -1,9 +1,9 @@
-import Box from "../../components/Box";
+import Container from "@/app/components/Container";
 import Link from "next/link";
 
 const Hero = () => {
   return (
-    <Box classes="flex items-center justify-center md:justify-start h-[calc(100vh-184px)]">
+    <Container classes="flex items-center justify-center md:justify-start h-[calc(100vh-184px)]">
       <div className="py-16 sm:py-24">
         <h1 className="mb-2 text-4xl font-semibold text-primary-color">
           Chrysanthopoulos Thanos
@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </Box>
+    </Container>
   );
 };
 

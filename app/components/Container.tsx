@@ -1,9 +1,9 @@
-interface BoxProps {
+interface ContainerProps {
   classes?: string;
   children?: React.ReactNode;
 }
 
-const Box = ({ classes, children }: BoxProps) => {
+const Container = ({ classes, children }: ContainerProps) => {
   return (
     <div className={`${classes} mx-auto w-full max-w-[940px] px-4`}>
       {children}
@@ -11,4 +11,4 @@ const Box = ({ classes, children }: BoxProps) => {
   );
 };
 
-export default Box;
+export default Container;

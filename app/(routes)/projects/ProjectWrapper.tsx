@@ -1,4 +1,3 @@
-import Box from "../../components/Box";
 import Project from "./Project";
 import { Project as TProject } from "../../utils/types";
 

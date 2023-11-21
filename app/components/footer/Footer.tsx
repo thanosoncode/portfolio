@@ -1,8 +1,8 @@
-import Box from "../components/Box";
-import github from "../../public/icons/github.png";
-import linkedIn from "../../public/icons/linkedin.png";
+import Box from "../Box";
+import github from "../../../public/icons/github.png";
+import linkedIn from "../../../public/icons/linkedin.png";
 import Link from "next/link";
-import LinkIcon from "../components/LinkIcon";
+import LinkIcon from "../LinkIcon";
 
 const Footer = () => {
   return (

@@ -1,12 +1,12 @@
-import Hero from "./hero/Hero";
+import Home from "./(routes)/home/Home";
 import { MotionPageWrapper } from "./components/MotionPageWrapper";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <MotionPageWrapper>
-      <Hero />
+      <Home />
     </MotionPageWrapper>
   );
 };
 
-export default Home;
+export default HomePage;

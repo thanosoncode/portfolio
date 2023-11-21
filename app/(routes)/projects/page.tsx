@@ -1,13 +1,13 @@
-import Box from "../components/Box";
-import Header from "../components/Header";
-import { MotionPageWrapper } from "../components/MotionPageWrapper";
+import Box from "../../components/Box";
+import Header from "../../components/Header";
+import { MotionPageWrapper } from "../../components/MotionPageWrapper";
 import {
   nimaAnima,
   atlasChania,
   workWizards,
   trainingLog,
-} from "../utils/data";
-import ProjectsContainer from "./ProjectsContainer";
+} from "../../utils/data";
+import ProjectsContainer from "./ProjectWrapper";
 
 const ProjectsPage = () => {
   return (
@@ -16,7 +16,6 @@ const ProjectsPage = () => {
         <Header
           title="Freelance projects"
           subtitle="Checkout my cool projects"
-          classes="py-8"
         />
         <ProjectsContainer left={nimaAnima} right={atlasChania} />
         <Header

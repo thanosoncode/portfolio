@@ -45,21 +45,21 @@ const Navbar = () => {
 
   return (
     <Box classes="flex justify-between py-8">
-      <Link className="text-primary-color text-lg font-medium" href="/">
+      <Link className="text-lg font-medium text-primary-color" href="/">
         thanosjs
       </Link>
-      <div className="hidden gap-8 sm:flex">
+      <div className="hidden gap-8 md:flex">
         {links.map((link) => (
           <Link
             key={link.name}
             href={link.href}
-            className="hover:text-primary-color duration-200"
+            className="duration-200 hover:text-primary-color"
           >
             {link.name}
           </Link>
         ))}
       </div>
-      <button onClick={openMenu} className="block sm:hidden">
+      <button onClick={openMenu} className="block md:hidden">
         <div className="cursor-pointer [&>svg]:h-6 [&>svg]:w-6 [&>svg]:duration-200 hover:[&>svg]:opacity-80">
           <HiOutlineMenu />
         </div>

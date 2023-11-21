@@ -25,6 +25,7 @@ const config: Config = {
         },
         "primary-color": "var(--primary-color)",
         "secondary-color": "var(--secondary-color)",
+        "medium-color": "var(--medium-color)",
         "background-color": "var(--background-color)",
       },
     },

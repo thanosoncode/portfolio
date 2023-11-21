@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
-import Footer from "./footer/Footer";
+import Footer from "./components/footer/Footer";
 import ToastProvider from "./components/toast/ToastProvider";
-import { FOOTER_HEIGHT, NAVBAR_HEIGHT } from "./utils/constants";
 
 const inter = Inter({ subsets: ["latin"] });
 

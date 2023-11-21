@@ -1,14 +1,12 @@
 "use client";
+import { LinkItem } from "@/app/utils/types";
 import Link from "next/link";
 import React, { useRef } from "react";
 import { IoClose } from "react-icons/io5";
 
 interface MobileMenuProps {
   isMenuOpen: boolean;
-  links: {
-    name: string;
-    href: string;
-  }[];
+  links: LinkItem[];
   onClose: () => void;
 }
 
@@ -29,9 +27,10 @@ const MobileMenu = ({ onClose, links, isMenuOpen }: MobileMenuProps) => {
       <div className="flex flex-col gap-4">
         {links.map((link) => (
           <Link
+            onClick={onClose}
             key={link.name}
             href={link.href}
-            className="duration-200 hover:text-appGreen-400"
+            className="duration-200 hover:text-primary-color"
           >
             {link.name}
           </Link>

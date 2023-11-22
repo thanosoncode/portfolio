@@ -83,8 +83,8 @@ const Contact = () => {
     <MotionPageWrapper>
       <Container>
         <Header
-          title="Contact me asap"
-          subtitle="I would love to hear from you"
+          title="Contact me"
+          subtitle="Feel free to drop me a message. Whether it's a project inquiry or just to say hi, I'm always happy to connect."
         />
         <form
           className="flex max-w-[400px] flex-col gap-6"
@@ -100,7 +100,7 @@ const Contact = () => {
               type="text"
               id="name"
               className="rounded-md border border-secondary-color bg-background-color px-2 py-1.5 placeholder:text-sm focus:border-primary-color focus:outline-none"
-              placeholder="Thanos Real"
+              placeholder="David Webb"
             />
             {<p className="text-sm text-red-400">{errors.name?.message}</p>}
           </fieldset>
@@ -113,7 +113,7 @@ const Contact = () => {
               type="text"
               id="email"
               className="rounded-md border border-secondary-color bg-background-color px-2 py-1.5 placeholder:text-sm focus:border-primary-color focus:outline-none"
-              placeholder="thanos@real.com"
+              placeholder="david@webb.com"
             />
             {<p className="text-sm text-red-400">{errors.email?.message}</p>}
           </fieldset>

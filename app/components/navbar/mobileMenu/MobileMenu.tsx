@@ -19,12 +19,12 @@ const MobileMenu = ({ onClose, isMenuOpen }: MobileMenuProps) => {
         isMenuOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
-      <button onClick={onClose} className="mb-8 mr-4 mt-8 self-end">
+      <button onClick={onClose} className="mb-20 mr-4 mt-8 self-end">
         <div className="cursor-pointer [&>svg]:h-6 [&>svg]:w-6 [&>svg]:duration-200 hover:[&>svg]:opacity-80">
           <IoClose />
         </div>
       </button>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-8">
         {LINKS.map((link) => (
           <Link
             onClick={onClose}

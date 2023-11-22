@@ -21,7 +21,7 @@ const Project = ({
         />
       </div>
       <div className="flex flex-col gap-2 pt-4">
-        <div className="text-2xl text-primary-color">{name}</div>
+        <div className="text-2xl font-medium text-primary-color">{name}</div>
         <div className="text-primary-color">{description}</div>
         <div className="flex flex-wrap gap-x-2 gap-y-1 py-4 sm:gap-x-4 sm:gap-y-2  sm:py-5">
           {stack.map((item, index) => (

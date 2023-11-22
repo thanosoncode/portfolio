@@ -21,14 +21,14 @@ const Footer = () => {
       </div>
       <div className="flex gap-6">
         <LinkIcon
-          href="https://www.linkedin.com/in/thanos-chrysanthopoulos/"
-          image={linkedIn}
-          alt="linkedIn"
-        />
-        <LinkIcon
           href="https://github.com/thanosoncode"
           image={github}
           alt="github"
+        />
+        <LinkIcon
+          href="https://www.linkedin.com/in/thanos-chrysanthopoulos/"
+          image={linkedIn}
+          alt="linkedIn"
         />
       </div>
     </Container>

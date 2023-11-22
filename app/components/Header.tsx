@@ -6,10 +6,11 @@ interface HeaderProps {
 
 const Header = ({ title, subtitle, classes }: HeaderProps) => {
   return (
-    <header className={classes}>
-      <h2 className="py-10 text-3xl font-semibold text-primary-color">
+    <header className={`py-10 ${classes}`}>
+      <h1 className=" mb-2 text-3xl font-semibold text-primary-color">
         {title}
-      </h2>
+      </h1>
+      <h2 className="text-base text-secondary-color">{subtitle}</h2>
     </header>
   );
 };

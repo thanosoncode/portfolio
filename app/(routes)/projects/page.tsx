@@ -15,12 +15,12 @@ const ProjectsPage = () => {
       <Container>
         <Header
           title="Freelance projects"
-          subtitle="Checkout my cool projects"
+          subtitle="Independent projects I'm creating and delivering outside work to improve and challenge myself"
         />
         <ProjectsContainer left={nimaAnima} right={atlasChania} />
         <Header
           title="Personal projects"
-          subtitle="personal stuff I do to learn"
+          subtitle="Side projects I am building to learn and explore my ideas"
         />
         <ProjectsContainer left={workWizards} right={trainingLog} />
       </Container>

@@ -14,7 +14,7 @@ const Hero = () => {
           <h2 className="text-xl text-primary-color">Software engineer</h2>
         </div>
         <div className="flex flex-col gap-1">
-          <div>Currently building with React, Typescript, Next.js and Node</div>
+          <div>Currently building with React, Typescript, Next and Node</div>
           <div> Always curious to learn new stuff</div>
         </div>
         <div className="flex gap-4">

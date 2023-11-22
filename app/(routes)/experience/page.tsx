@@ -70,7 +70,9 @@ const Experience = () => {
               className="grid grid-cols-1 gap-12 sm:grid-cols-[40%_60%]"
             >
               <div>
-                <h2 className="text-primary-color">{exp.title}</h2>
+                <h2 className="font-semibold text-primary-color">
+                  {exp.title}
+                </h2>
                 <p>{exp.duration}</p>
               </div>
               <div className="flex flex-col gap-6">

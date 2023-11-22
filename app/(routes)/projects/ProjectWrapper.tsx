@@ -9,7 +9,7 @@ interface ProjectsWrapperPropsProps {
 const ProjectsWrapperProps = ({ left, right }: ProjectsWrapperPropsProps) => {
   return (
     <div className="mb-24">
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-y-24 md:grid-cols-2 md:gap-12">
         <Project project={left} />
         <Project project={right} />
       </div>

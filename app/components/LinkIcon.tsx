@@ -20,7 +20,7 @@ const LinkIcon = ({ href, image, alt }: LinkIconProps) => {
         alt={alt}
         width={50}
         height={50}
-        className="relative h-7 w-7 flex-shrink-0 opacity-70 duration-200 hover:opacity-60 sm:h-8 sm:w-8"
+        className="relative h-6 w-6 flex-shrink-0 opacity-70 duration-200 hover:opacity-60 sm:h-8 sm:w-8"
       />
     </Link>
   );

@@ -33,7 +33,7 @@ const Project = ({
             href={demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover: flex items-center whitespace-nowrap rounded-md border border-primary-color px-4 py-1 text-primary-color hover:bg-primary-color hover:text-black"
+            className="hover: flex items-center whitespace-nowrap rounded-md border border-primary-color px-4 py-1 text-primary-color hover:bg-primary-color hover:text-background-color"
           >
             View Demo
           </Link>
@@ -41,7 +41,7 @@ const Project = ({
             href={codeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover: flex items-center whitespace-nowrap rounded-md border border-primary-color px-4 py-1 text-primary-color hover:bg-primary-color hover:text-black"
+            className="hover: flex items-center whitespace-nowrap rounded-md border border-primary-color px-4 py-1 text-primary-color hover:bg-primary-color hover:text-background-color"
           >
             View Code
           </Link>

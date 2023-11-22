@@ -15,11 +15,11 @@ const MobileMenu = ({ onClose, isMenuOpen }: MobileMenuProps) => {
   return (
     <div
       ref={menuRef}
-      className={`fixed left-0 top-0 z-20 flex h-full w-full flex-col items-center bg-black duration-300 ${
+      className={`fixed left-0 top-0 z-20 flex h-full w-full flex-col items-center bg-background-color duration-300 ${
         isMenuOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
-      <button onClick={onClose} className="mb-8 mr-16 mt-8 self-end">
+      <button onClick={onClose} className="mb-8 mr-4 mt-8 self-end">
         <div className="cursor-pointer [&>svg]:h-6 [&>svg]:w-6 [&>svg]:duration-200 hover:[&>svg]:opacity-80">
           <IoClose />
         </div>

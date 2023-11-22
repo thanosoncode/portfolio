@@ -13,7 +13,7 @@ const Footer = () => {
           <Link
             key={link.name}
             href={link.href}
-            className="duration-200 hover:text-primary-color"
+            className="text-sm duration-200 hover:text-primary-color sm:text-base"
           >
             {link.name}
           </Link>

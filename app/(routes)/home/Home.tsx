@@ -1,11 +1,10 @@
 import Container from "@/app/components/Container";
-import { NAVBAR_PLUS_FOOTER_HEIGHT } from "@/app/utils/constants";
 import Link from "next/link";
 
 const Hero = () => {
   return (
     <Container
-      classes={`flex items-center justify-center md:justify-start h-[calc(100vh-${NAVBAR_PLUS_FOOTER_HEIGHT}px)]`}
+      classes={`flex items-center justify-center md:justify-start h-[calc(100vh-184px)]`}
     >
       <div className="flex flex-col gap-7">
         <div>
@@ -27,7 +26,7 @@ const Hero = () => {
           </Link>
           <Link
             href="resume/resume.pdf"
-            target="a_black"
+            target="a_blank"
             rel="noopener noreferrer"
             className="border-b border-transparent px-1 text-primary-color duration-200 hover:border-primary-color"
           >

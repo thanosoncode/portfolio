@@ -4,7 +4,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <Container
-      classes={`flex items-center justify-center md:justify-start h-[calc(100vh-184px)]`}
+      classes={`flex items-center justify-center md:justify-start h-[calc(100dvh-184px)]`}
     >
       <div className="flex flex-col gap-7">
         <div>

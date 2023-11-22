@@ -8,6 +8,12 @@ import {
   trainingLog,
 } from "../../utils/data";
 import ProjectsContainer from "./ProjectWrapper";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ThanosJS | Projects",
+  description: "Take a look at my freelance and personal projects.",
+};
 
 const ProjectsPage = () => {
   return (

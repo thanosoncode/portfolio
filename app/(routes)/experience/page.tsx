@@ -2,6 +2,12 @@ import Container from "@/app/components/Container";
 import Header from "../../components/Header";
 import { MotionPageWrapper } from "../../components/MotionPageWrapper";
 import { experiences } from "@/app/utils/data";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ThanosJS | Experience",
+  description: "Work experience",
+};
 
 const Experience = () => {
   return (

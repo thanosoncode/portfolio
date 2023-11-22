@@ -1,7 +1,7 @@
-import nima from "../../public/projects/nimaanima.png";
-import atlas from "../../public/projects/atlaschania.png";
-import training from "../../public/projects/training-log.png";
-import wizards from "../../public/projects/wizards.png";
+import nima from "../../public/projects/nimaanima.jpg";
+import atlas from "../../public/projects/atlaschania.jpg";
+import training from "../../public/projects/training-log.jpg";
+import wizards from "../../public/projects/wizards.jpg";
 import { Project } from "./types";
 
 export const nimaAnima: Project = {

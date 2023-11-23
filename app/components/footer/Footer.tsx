@@ -19,7 +19,7 @@ const Footer = () => {
           </Link>
         ))}
       </div>
-      <div className="flex gap-6">
+      <div className="flex gap-4 sm:gap-6">
         <LinkIcon
           href="https://github.com/thanosoncode"
           image={github}

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const Contact = () => {
   return (
     <MotionPageWrapper>
-      <Container>
+      <Container classes="pb-20">
         <Header
           title="Contact me"
           subtitle="Feel free to drop me a message. Whether it's a project inquiry or just to say hi, I'm always happy to connect."

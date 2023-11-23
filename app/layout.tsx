@@ -4,12 +4,13 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import ToastProvider from "./components/toast/ToastProvider";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Thanosjs | Software engineer",
-  description: "Building with React, Typescript, Next.js and Node.js",
+  description: "Building with React, Typescript, Next and Node",
 };
 
 export default function RootLayout({
@@ -19,6 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="canonical" href="https://www.thanosjs.com/" />
+      </Head>
       <body className={inter.className}>
         <ToastProvider />
         <Navbar />

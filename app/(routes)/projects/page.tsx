@@ -28,7 +28,7 @@ const ProjectsPage = () => {
           title="Personal projects"
           subtitle="Side projects I am building to learn and explore my ideas"
         />
-        <ProjectsContainer left={workWizards} right={trainingLog} />
+        <ProjectsContainer left={trainingLog} right={workWizards} />
       </Container>
     </MotionPageWrapper>
   );

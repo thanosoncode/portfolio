@@ -122,7 +122,7 @@ export const experiences = [
     duration: "Aug 2023 - Present",
     bullets: [
       {
-        start: "Developing an full stack e-commerce with",
+        start: "Developing a full stack e-commerce with",
         highlight: "custom CMS and payment integration",
         end: "using Next.js, Typescript, Stripe, Redux-toolkit, React-query, Prisma, TailwindCSS",
       },

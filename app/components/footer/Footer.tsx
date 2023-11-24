@@ -8,7 +8,7 @@ import { LINKS } from "@/app/utils/constants";
 const Footer = () => {
   return (
     <Container classes="flex items-center justify-between py-8">
-      <div className="flex gap-8">
+      <div className="flex gap-6 sm:gap-8">
         {LINKS.map((link) => (
           <Link
             key={link.name}

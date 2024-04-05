@@ -10,7 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Thanosjs | Software engineer",
-  description: "Building with React, Typescript, Next and Node",
+  description:
+    "Currently building with React, Typescript, Next and Node.js. Always up for new challenges",
   keywords:
     "Software engineer, portfolio,Freelancer, React developer, projects",
 };

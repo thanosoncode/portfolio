@@ -25,7 +25,7 @@ const Hero = () => {
             Contact
           </Link>
           <Link
-            href="resume/resume.pdf"
+            href="resume/Chrysanthopoulos_Thanos_Resume.pdf"
             target="a_blank"
             rel="noopener noreferrer"
             className="border-b border-transparent px-1 text-primary-color duration-200 hover:border-primary-color"

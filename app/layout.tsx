@@ -11,6 +11,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Thanosjs | Software engineer",
   description: "Building with React, Typescript, Next and Node",
+  keywords:
+    "Software engineer, portfolio,Freelancer, React developer, projects",
 };
 
 export default function RootLayout({

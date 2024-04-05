@@ -1,16 +1,17 @@
 import nima from "../../public/projects/nimaanima.jpg";
 import atlas from "../../public/projects/atlaschania.jpg";
 import training from "../../public/projects/training-log.jpg";
-import wizards from "../../public/projects/wizards.jpg";
+import jobPerfectImg from "../../public/projects/jobPerfect.jpg";
 import { Project } from "./types";
 
 export const nimaAnima: Project = {
   name: "NimaAnima",
   image: nima,
   description: "E-commerce with custom CMS and payment integration",
+  inProgress: true,
   stack: [
-    "Typescript",
     "Next.js",
+    "Typescript",
     "Stripe",
     "Redux-toolkit",
     "React-query",
@@ -18,7 +19,7 @@ export const nimaAnima: Project = {
     "Zod",
     "Next-auth",
     "TailwindCSS",
-    "Prisma",
+    "PrismaORM",
     "MongoDB",
   ],
   demoUrl: "https://nimaanima.vercel.app/",
@@ -29,14 +30,15 @@ export const atlasChania: Project = {
   name: "Atlas Chania",
   image: atlas,
   description: "Gym website with blog and newsletter management",
+  inProgress: false,
   stack: [
-    "Typescript",
     "Next.js",
+    "Typescript",
     "React-query",
     "Next-auth",
     "React-quill",
     "TailwindCSS",
-    "Prisma",
+    "PrismaORM",
     "MongoDB",
   ],
   demoUrl: "https://www.atlaschania.gr/",
@@ -46,42 +48,48 @@ export const atlasChania: Project = {
 export const trainingLog: Project = {
   name: "Training log",
   image: training,
+  inProgress: false,
   description:
     "MERN app with user flows and data visualization to track workouts",
   stack: [
-    "Typescript",
     "React.js",
+    "Typescript",
     "Node.js",
     "Express.js",
     "JWT",
     "React-query",
     "MaterialUI",
     "Recharts",
-    "Prisma",
+    "PrismaORM",
     "MongoDB",
   ],
   demoUrl: "https://traininglog.netlify.app/",
   codeUrl: "https://github.com/thanosoncode/training-log",
 };
 
-export const workWizards: Project = {
-  name: "Work wizards",
-  image: wizards,
-  description: "Online marketplace for professionals in hospitality",
+export const jobPerfect: Project = {
+  name: "JobPerfect",
+  image: jobPerfectImg,
+  inProgress: true,
+  description:
+    "Social media platform for job seekers and businesses in hospitality industry. Includes user profiles, job listings, communication, payments.",
   stack: [
-    "Typescript",
     "Next.js",
+    "Typescript",
     "Stripe",
     "Redux-toolkit",
     "React-query",
     "React-hook-form",
     "Next-auth",
     "TailwindCSS",
-    "Prisma",
+    "Shadcn UI",
+    "Resend",
+    "Firebase",
+    "PrismaORM",
     "MongoDB",
   ],
-  demoUrl: "https://traininglog.netlify.app/",
-  codeUrl: "https://github.com/thanosoncode/training-log",
+  demoUrl: "https://jobperfect.vercel.app/",
+  codeUrl: "",
 };
 
 export const experiences = [
@@ -118,25 +126,30 @@ export const experiences = [
     ],
   },
   {
-    title: "Software Engineer @ NimaAnima",
+    title: "Freelance Software Engineer",
     duration: "Aug 2023 - Present",
     bullets: [
       {
         start: "Developing a full stack e-commerce with",
         highlight: "custom CMS and payment integration",
-        end: "using Next.js, Typescript, Stripe, Redux-toolkit, React-query, Prisma, TailwindCSS",
+        end: "using Next.js, Typescript, Stripe, Redux-toolkit, React-query, PrismaORM, TailwindCSS",
       },
-    ],
-  },
-  {
-    title: "Software Engineer @ Atlas Chania",
-    duration: "May 2023 - Aug 2023",
-    bullets: [
       {
         start: "Developed full stack gym website including",
         highlight: "blog and newsletter management",
-        end: "for admins using Next.js, Typescript, Tailwind CSS, Prisma, Next-auth, React-quill, and Resend.",
+        end: "for admins using Next.js, Typescript, Tailwind CSS, PrismaORM, Next-auth, React-quill, and Resend.",
       },
     ],
   },
+  // {
+  //   title: "Software Engineer @ Atlas Chania",
+  //   duration: "May 2023 - Aug 2023",
+  //   bullets: [
+  //     {
+  //       start: "Developed full stack gym website including",
+  //       highlight: "blog and newsletter management",
+  //       end: "for admins using Next.js, Typescript, Tailwind CSS, PrismaORM, Next-auth, React-quill, and Resend.",
+  //     },
+  //   ],
+  // },
 ];

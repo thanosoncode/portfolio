@@ -2,8 +2,8 @@ import Project from "./Project";
 import { Project as TProject } from "../../utils/types";
 
 interface ProjectsWrapperPropsProps {
-  left: TProject;
-  right: TProject;
+  left: TProject | null;
+  right: TProject | null;
 }
 
 const ProjectsWrapperProps = ({ left, right }: ProjectsWrapperPropsProps) => {

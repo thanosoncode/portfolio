@@ -1,12 +1,7 @@
 import Container from "@/app/components/Container";
 import Header from "../../components/Header";
 import { MotionPageWrapper } from "../../components/MotionPageWrapper";
-import {
-  nimaAnima,
-  atlasChania,
-  workWizards,
-  trainingLog,
-} from "../../utils/data";
+import { nimaAnima, atlasChania, jobPerfect } from "../../utils/data";
 import ProjectsContainer from "./ProjectWrapper";
 import { Metadata } from "next";
 
@@ -28,7 +23,7 @@ const ProjectsPage = () => {
           title="Personal projects"
           subtitle="Side projects I am building to learn and explore my ideas"
         />
-        <ProjectsContainer left={trainingLog} right={workWizards} />
+        <ProjectsContainer left={jobPerfect} right={null} />
       </Container>
     </MotionPageWrapper>
   );

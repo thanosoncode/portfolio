@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-export type Project = {
+export type TProject = {
   name: string;
   image: StaticImageData;
   description: string;

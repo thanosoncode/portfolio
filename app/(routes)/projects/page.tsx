@@ -15,15 +15,15 @@ const ProjectsPage = () => {
     <MotionPageWrapper>
       <Container>
         <Header
-          title="Freelance projects"
-          subtitle="Independent projects I'm creating and delivering outside work to improve and challenge myself"
-        />
-        <ProjectsContainer left={nimaAnima} right={atlasChania} />
-        <Header
           title="Personal projects"
           subtitle="Side projects I am building to learn and explore my ideas"
         />
         <ProjectsContainer left={jobPerfect} right={null} />
+        <Header
+          title="Freelance projects"
+          subtitle="Independent projects I'm creating and delivering outside work to improve and challenge myself"
+        />
+        <ProjectsContainer left={nimaAnima} right={atlasChania} />
       </Container>
     </MotionPageWrapper>
   );

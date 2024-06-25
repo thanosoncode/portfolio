@@ -2,9 +2,9 @@ import nima from "../../public/projects/nimaanima.jpg";
 import atlas from "../../public/projects/atlaschania.jpg";
 import training from "../../public/projects/training-log.jpg";
 import jobPerfectImg from "../../public/projects/jobPerfect.jpg";
-import { Project } from "./types";
+import { TProject } from "./types";
 
-export const nimaAnima: Project = {
+export const nimaAnima: TProject = {
   name: "NimaAnima",
   image: nima,
   description: "E-commerce with custom CMS and payment integration",
@@ -26,7 +26,7 @@ export const nimaAnima: Project = {
   codeUrl: "https://github.com/thanosoncode/nimaanima",
 };
 
-export const atlasChania: Project = {
+export const atlasChania: TProject = {
   name: "Atlas Chania",
   image: atlas,
   description: "Gym website with blog and newsletter management",
@@ -45,7 +45,7 @@ export const atlasChania: Project = {
   codeUrl: "https://github.com/thanosoncode/atlas-chania-test",
 };
 
-export const trainingLog: Project = {
+export const trainingLog: TProject = {
   name: "Training log",
   image: training,
   inProgress: false,
@@ -67,12 +67,12 @@ export const trainingLog: Project = {
   codeUrl: "https://github.com/thanosoncode/training-log",
 };
 
-export const jobPerfect: Project = {
+export const jobPerfect: TProject = {
   name: "JobPerfect",
   image: jobPerfectImg,
-  inProgress: true,
+  inProgress: false,
   description:
-    "Social media platform for job seekers and businesses in hospitality industry. Includes user profiles, job listings, communication, payments.",
+    "Social media platform for job seekers and businesses in hospitality industry. Includes maps, user profiles, job listings, communication, payments.",
   stack: [
     "Next.js",
     "Typescript",
@@ -88,7 +88,7 @@ export const jobPerfect: Project = {
     "PrismaORM",
     "MongoDB",
   ],
-  demoUrl: "https://jobperfect.vercel.app/",
+  demoUrl: "https://www.jobperfect.gr/",
   codeUrl: "",
 };
 

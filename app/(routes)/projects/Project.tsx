@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Project } from "../../utils/types";
+import { TProject } from "../../utils/types";
 import Link from "next/link";
 
 interface ProjectProps {
-  project: Project | null;
+  project: TProject | null;
 }
 
 const Project: React.FC<ProjectProps> = ({ project }) => {

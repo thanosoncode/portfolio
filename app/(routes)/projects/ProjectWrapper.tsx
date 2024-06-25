@@ -1,5 +1,5 @@
 import Project from "./Project";
-import { Project as TProject } from "../../utils/types";
+import { TProject } from "../../utils/types";
 
 interface ProjectsWrapperPropsProps {
   left: TProject | null;

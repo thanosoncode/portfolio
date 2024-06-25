@@ -57,9 +57,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
               View Code
             </Link>
           ) : (
-            <div className="whitespace-nowrap rounded-md border border-primary-color px-4 py-1 text-primary-color">
-              Private
-            </div>
+            <></>
           )}
         </div>
       </div>

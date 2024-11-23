@@ -1,7 +1,3 @@
-**Hey I'm Thanos**
-
-Frontend engineer @ [GWI](https://www.gwi.com/)
-
 **Always remember**
 
 > Life is 10%
